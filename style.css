@@ -1,0 +1,123 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    
+    background: linear-gradient(135deg,#cce9ff 10%, #4e9ffc 100%);
+}
+body::before,
+body::after{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    opacity: 0.5;
+}
+body::before{
+    clip-path: circle(30% at left 20%);
+    background: linear-gradient(135deg,#4e9ffc 10%, #cce9ff 100%);
+
+}
+body::after{
+    clip-path: circle(30% at right 80%);
+    background: linear-gradient(135deg,#4e9ffc 10%, #cce9ff 100%);
+
+}
+header{
+    width:90%;
+    height:85vh;
+    background: rgba(255,255,255,0.1);
+    margin:auto;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5)
+}
+header .nav-bar{
+    display: flex;
+    width: 100%;
+    padding: 35px 50px;
+    justify-content:space-between;
+}
+header .nav-bar .logo a{
+    font-size: 22px;
+    font-weight: 500;
+    color:#000;
+}
+header .nav-bar .menu{
+    display:flex;
+}
+.nav-bar .menu li{
+    list-style: none;
+    margin:0  6px;
+}
+.nav-bar .menu a{
+    text-decoration: none;
+    color:#000;
+    font-size:17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.nav-bar .menu a:hover{
+    text-decoration: underline 2px;
+}
+.nav-bar .buttons input{
+    color:#f2f2f2;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin:0 8px;
+    border:none;
+    border-radius: 12px;
+    cursor:pointer;
+    background: linear-gradient(135deg,#4e9ffc 10%, #3671e8 100%); 
+}
+.nav-bar .buttons input:hover{
+    transform:scale(0.97);
+}
+.text{
+    width:40%;
+    margin:100px 0 0 50px;
+}
+.text h2{
+    font-size: 27px;
+    font-weight: 600;
+}
+.text p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.main input{
+    color:#f2f2f2;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin:15px 0 0 50px;
+    display:flex;
+    justify-content:space-between;
+    border:none;
+    border-radius: 12px;
+    cursor:pointer;
+    background: linear-gradient(135deg,#4e9ffc 10%, #3671e8 100%); 
+}
+.main input:hover{
+    transform:scale(0.97);    
+}
+
+
+
